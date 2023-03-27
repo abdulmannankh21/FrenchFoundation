@@ -1,19 +1,10 @@
 import 'package:flutter/cupertino.dart';
-import 'package:flutter_svg/flutter_svg.dart';
-import 'package:loyalty/export.dart';
+import 'package:fafapp/export.dart';
 
 class SplashComponents {
   Widget getSplashLogo() {
-    return SvgPicture.asset(
-      assets.icSplash,
-      width: sizes.width * 0.65,
-      fit: BoxFit.fitWidth,
-    );
-  }
-
-  Widget getLoyaltyLogo() {
-    return SvgPicture.asset(
-      assets.icLoyalty,
+    return Image.asset(
+      "assets/images/splashlogo.png",
       width: sizes.width * 0.65,
       fit: BoxFit.fitWidth,
     );

@@ -1,17 +1,15 @@
 import 'dart:convert';
-
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-import 'package:loyalty/export.dart';
-
+import 'package:fafapp/export.dart';
 import 'export.dart';
 
-class Splash extends GetView<SplashController> {
+class SplashScreen extends GetView<SplashController> {
   SplashComponents _components = SplashComponents();
 
   @override
   Widget build(BuildContext context) {
-    controller.initialize(context: context);
+    controller.initialize(context);
     return Scaffold(
       backgroundColor: colors.white,
       body: Column(
@@ -24,8 +22,6 @@ class Splash extends GetView<SplashController> {
               child: _components.getSplashLogo(),
             ),
           ),
-          verticalSpacer(30),
-          _components.getLoyaltyLogo(),
         ],
       ),
     );

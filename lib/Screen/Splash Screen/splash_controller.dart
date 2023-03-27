@@ -1,14 +1,14 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-import 'package:loyalty/export.dart';
-
+import 'package:fafapp/routes/export.dart';
+import 'package:fafapp/res/export.dart';
 import 'export.dart';
 
-class SplashPresenterImpl extends SplashController with StateMixin<Splash> {
+class SplashPresenterImpl extends SplashController with StateMixin<SplashScreen> {
   bool isInitialized = false;
 
   @override
-  void initialize({BuildContext context}) async {
+  void initialize(BuildContext context) async {
     initAppResources(context);
     Future.delayed(Duration(seconds: 3), () => navigateToOnBoarding());
     // await _initializerUseCase.getInitRoute().then(
@@ -35,7 +35,7 @@ class SplashPresenterImpl extends SplashController with StateMixin<Splash> {
   }
 
   @override
-  void openNextRoute({String routeName}) {
+  void openNextRoute(String routeName) {
     // Navigator.pushReplacementNamed(context, routeName);
   }
 

@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:loyalty/export.dart';
+import 'package:fafapp/export.dart';
 
 Widget horizontalDivider() => Container(
       width: double.infinity,

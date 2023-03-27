@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:loyalty/export.dart';
+import 'package:fafapp/export.dart';
 
 Widget fullScreenLoader() => Material(
       color: colors.background.withOpacity(0.05),

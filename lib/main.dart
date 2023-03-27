@@ -1,4 +1,4 @@
-import 'package:fafapp/Screen/Splash%20Screen/splash_screen.dart';
+import 'package:fafapp/routes/export.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 void main() {
@@ -13,7 +13,8 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return GetMaterialApp(
       debugShowCheckedModeBanner: false,
-      home: SplashScreen(),
+      initialRoute: RouteNames.splash,
+      getPages: AppRoutes.getPage,
     );
   }
 }

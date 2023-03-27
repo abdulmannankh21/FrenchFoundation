@@ -2,14 +2,14 @@ import 'package:flutter/cupertino.dart';
 import 'export.dart';
 
 
- AppAssets assets;
- AppColors colors;
- AppSizes sizes;
- TextStyles textStyles;
+ late AppAssets assets;
+late AppColors colors;
+late AppSizes sizes;
+late TextStyles textStyles;
 
 bool _isInitialized = false;
 
-void initializeResources({ BuildContext context}) {
+void initializeResources({  required BuildContext context}) {
   if (_isInitialized) {
     /**
      * this is to prevent
