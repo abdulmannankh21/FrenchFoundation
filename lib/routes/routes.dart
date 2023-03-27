@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:fafapp/export.dart';
-import 'package:fafapp/Screen/Splash Screen/export.dart';
+import 'package:fafapp/Screen/export.dart';
 
 import 'export.dart';
 
@@ -11,6 +11,10 @@ class AppRoutes {
       name: RouteNames.splash,
       page: () => SplashScreen(),
       binding: SplashBinding(),
+    ),
+    GetPage(
+      name: RouteNames.onboarding,
+      page: () => OnboardingScreen(),
     ),
 
   ];

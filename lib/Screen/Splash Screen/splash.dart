@@ -1,4 +1,3 @@
-import 'dart:convert';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:fafapp/export.dart';
@@ -11,16 +10,23 @@ class SplashScreen extends GetView<SplashController> {
   Widget build(BuildContext context) {
     controller.initialize(context);
     return Scaffold(
-      backgroundColor: colors.white,
-      body: Column(
-        mainAxisAlignment: MainAxisAlignment.center,
-        crossAxisAlignment: CrossAxisAlignment.center,
+      backgroundColor: AppColors.bgColor,
+      body: Stack(
         children: [
-          Center(
-            child: Container(
-              height: verticalValue(260),
-              child: _components.getSplashLogo(),
-            ),
+          Positioned(
+              bottom: 0.0,
+              child: Image.asset("assets/images/splashmap.png",width: Get.width,)),
+          Column(
+            mainAxisAlignment: MainAxisAlignment.center,
+            crossAxisAlignment: CrossAxisAlignment.center,
+            children: [
+              Center(
+                child: Container(
+                  height: verticalValue(260),
+                  child: _components.getSplashLogo(),
+                ),
+              ),
+            ],
           ),
         ],
       ),

@@ -1,1 +1,2 @@
-export 'Splash Screen/splash.dart';
+export 'Splash Screen/export.dart';
+export 'Onboarding/export.dart';

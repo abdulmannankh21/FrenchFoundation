@@ -5,7 +5,7 @@ class SplashComponents {
   Widget getSplashLogo() {
     return Image.asset(
       "assets/images/splashlogo.png",
-      width: sizes.width * 0.65,
+      width: sizes.width * 0.5,
       fit: BoxFit.fitWidth,
     );
   }
