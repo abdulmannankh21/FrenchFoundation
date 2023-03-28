@@ -4,4 +4,5 @@ class RouteNames{
   static const home = '/home';
   static const onboarding = '/onboarding';
   static const login = '/login';
+  static const forgot = '/forgot';
 }

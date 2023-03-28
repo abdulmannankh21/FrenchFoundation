@@ -33,6 +33,7 @@ class SplashPresenterImpl extends SplashController with StateMixin<SplashScreen>
     if (hasSeenOnboarding) {
       // User has already seen onboarding, navigate to main screen
       // navigateToMainScreen();
+      Get.off(AppRoutes.appRoutes(RouteNames.login));
     } else {
       // User has not seen onboarding, show it
       prefs.setBool('hasSeenOnboarding', true);

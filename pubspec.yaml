@@ -48,6 +48,8 @@ dev_dependencies:
   get: any
   flutter_onboarding_slider: ^1.0.9
   shared_preferences: ^2.0.20
+  http: ^0.13.5
+  flutter_svg: ^2.0.4
 
 # For information on the generic Dart part of this file, see the
 # following page: https://dart.dev/tools/pub/pubspec

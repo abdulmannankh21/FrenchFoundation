@@ -1,3 +1,5 @@
+import 'package:fafapp/bindings/forgot_bindings.dart';
+import 'package:fafapp/bindings/login_bindings.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:fafapp/export.dart';
@@ -16,7 +18,16 @@ class AppRoutes {
       name: RouteNames.onboarding,
       page: () => OnboardingScreen(),
     ),
-
+    GetPage(
+      name: RouteNames.login,
+      page: () => LoginScreen(),
+      binding: LoginBindings(),
+    ),
+    GetPage(
+      name: RouteNames.forgot,
+      page: () => ForgotView(),
+      binding: ForgotBindings(),
+    ),
   ];
 
   static Future<dynamic>? appRoutes(final String routeName) {
@@ -27,6 +38,7 @@ class AppRoutes {
       case RouteNames.onboarding:
       case RouteNames.login:
         return Get.offAllNamed(routeName);
+      case RouteNames.forgot:
       default:
         return _errorRoute();
     }

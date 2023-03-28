@@ -1,3 +1,4 @@
+import 'package:fafapp/export.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
@@ -14,12 +15,7 @@ class OnboardingScreen extends StatelessWidget {
         leading: Image.asset("assets/images/leadinglogo.png"),
         finishButtonText: 'Commencer',
         onFinish: () {
-          // Navigator.push(
-          //   context,
-          //   CupertinoPageRoute(
-          //     builder: (context) => const RegisterPage(),
-          //   ),
-          // );
+         Get.off(AppRoutes.appRoutes(RouteNames.login));
         },
         finishButtonStyle: FinishButtonStyle(
           backgroundColor: AppColors.primaryColor,
@@ -42,12 +38,7 @@ class OnboardingScreen extends StatelessWidget {
           ),
         ),
         trailingFunction: () {
-          // Navigator.push(
-          //   context,
-          //   CupertinoPageRoute(
-          //     builder: (context) => const LoginPage(),
-          //   ),
-          // );
+          Get.off(AppRoutes.appRoutes(RouteNames.login));
         },
         controllerColor: AppColors.primaryColor,
         totalPage: 3,

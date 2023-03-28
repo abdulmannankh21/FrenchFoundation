@@ -1,7 +1,7 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.example.fafapp">
    <application
-        android:label="fafapp"
+        android:label="FAF"
         android:name="${applicationName}"
         android:icon="@mipmap/ic_launcher">
         <activity
