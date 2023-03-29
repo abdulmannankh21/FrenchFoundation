@@ -50,6 +50,8 @@ dev_dependencies:
   shared_preferences: ^2.0.20
   http: ^0.13.5
   flutter_svg: ^2.0.4
+  salomon_bottom_bar: ^3.3.1
+  google_fonts: any
 
 # For information on the generic Dart part of this file, see the
 # following page: https://dart.dev/tools/pub/pubspec

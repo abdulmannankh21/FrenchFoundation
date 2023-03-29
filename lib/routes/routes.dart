@@ -1,5 +1,4 @@
-import 'package:fafapp/bindings/forgot_bindings.dart';
-import 'package:fafapp/bindings/login_bindings.dart';
+import 'package:fafapp/bindings/export.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:fafapp/export.dart';
@@ -28,17 +27,42 @@ class AppRoutes {
       page: () => ForgotView(),
       binding: ForgotBindings(),
     ),
+    GetPage(
+      name: RouteNames.navigation,
+      page: () => BottomNavigation(),
+      binding: BottomNavigationBindings(),
+    ),
+    GetPage(
+      name: RouteNames.donation,
+      page: () => DonationScreen(),
+      binding: DonationsBinding(),
+    ),
+    GetPage(
+      name: RouteNames.home,
+      page: () => HomeScreen(),
+      binding: HomeBindings(),
+    ),
+    GetPage(
+      name: RouteNames.explore,
+      page: () => ExploreRegionalEvents(),
+      binding: ExploreBinding(),
+    ),
   ];
 
   static Future<dynamic>? appRoutes(final String routeName) {
     switch (routeName) {
       case RouteNames.splash:
-      case RouteNames.home:
-        return Get.toNamed(routeName);
       case RouteNames.onboarding:
       case RouteNames.login:
         return Get.offAllNamed(routeName);
       case RouteNames.forgot:
+      case RouteNames.navigation:
+      case RouteNames.donation:
+      case RouteNames.home:
+      case RouteNames.explore:
+      case RouteNames.blog:
+      case RouteNames.setting:
+        return Get.toNamed(routeName);
       default:
         return _errorRoute();
     }

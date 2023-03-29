@@ -1,4 +1,5 @@
 import 'dart:convert';
+import 'package:fafapp/export.dart';
 import 'package:get/get.dart';
 import 'package:http/http.dart' as http;
 
@@ -11,6 +12,7 @@ class LoginController extends GetxController {
     if (email.value.isEmpty || password.value.isEmpty) {
       Get.snackbar("Erreur", "Veuillez entrer votre email et votre mot de passe");
     } else {
+      AppRoutes.appRoutes(RouteNames.navigation);
       try {
         var response = await http.post(
           'YOUR_API_URL' as Uri,
@@ -24,7 +26,7 @@ class LoginController extends GetxController {
         );
         var data = jsonDecode(response.body);
         if (data['success']) {
-          // Get.to(MainScreen());
+          // AppRoutes.appRoutes(RouteNames.navigation);
         } else {
           Get.snackbar("Erreur", data['message']);
         }
