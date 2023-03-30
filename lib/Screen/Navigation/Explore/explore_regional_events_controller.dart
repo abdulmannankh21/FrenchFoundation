@@ -7,7 +7,34 @@ import '../../../../Models/regional_events_model.dart';
 class ExploreRegionalEventsController extends GetxController {
   late HorizontalList horizontalList;
   var isLoading = false.obs;
+  var state = ["Auvergne-Rhône-Alpes",
+    "Bourgogne-Franche-Comté",
+    "Brittany",
+    "Centre-Val de Loire",
+    "Corsica",
+    "Grand Est",
+    "Hauts-de-France",
+    "Paris Region",
+    "Normandie",
+    "Nouvelle-Aquitaine",
+    "Occitanie",
+    "Pays de la Loire",
+    "Provence Alpes Côte d’Azur",
+    "Guadeloupe",
+    "French Guiana",
+    "Martinique",
+    "Mayotte",
+    "Réunion",].obs;
+  var city = ['Developer', 'Designer', 'Consultant', 'Student'].obs;
+  RxString selectedState = ''.obs;
+  RxString selectedCity = ''.obs;
 
+  void updateSelectedState(String state) {
+    selectedState.value = state;
+  }
+  void updateSelectedCity(String city) {
+    selectedCity.value = city;
+  }
   @override
   void onInit() {
     super.onInit();

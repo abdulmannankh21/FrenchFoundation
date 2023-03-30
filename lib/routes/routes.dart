@@ -1,3 +1,4 @@
+
 import 'package:fafapp/bindings/export.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
@@ -46,6 +47,11 @@ class AppRoutes {
       name: RouteNames.explore,
       page: () => ExploreRegionalEvents(),
       binding: ExploreBinding(),
+    ),
+    GetPage(
+      name: RouteNames.blog,
+      page: () => BlogScreen(),
+      binding: BlogBindings(),
     ),
   ];
 

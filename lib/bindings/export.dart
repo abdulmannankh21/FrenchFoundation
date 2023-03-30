@@ -5,3 +5,4 @@ export 'donations_bindings.dart';
 export 'bottomnavigation_bindings.dart';
 export 'home_bindings.dart';
 export 'explore_bindings.dart';
+export 'blog_binding.dart';

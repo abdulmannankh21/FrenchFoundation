@@ -19,8 +19,8 @@ class BottomNavigation extends StatelessWidget {
             // Replace these with your own pages
             HomeScreen(),
             ExploreRegionalEvents(),
-            Container(color: Colors.orange),
-            Container(color: Colors.teal),
+            BlogScreen(),
+            SettingScreen(),
           ],
           onPageChanged: controller.changeIndex,
         ),

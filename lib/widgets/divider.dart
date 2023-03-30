@@ -6,3 +6,8 @@ Widget horizontalDivider() => Container(
       height: 1,
       color: AppColors.primaryColor,
     );
+Widget horizontalDividerGrey() => Container(
+  width: double.infinity,
+  height: 1,
+  color: AppColors.textfieldcolor,
+);
