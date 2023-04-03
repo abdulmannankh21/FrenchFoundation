@@ -3,4 +3,4 @@ export 'Donation/export.dart';
 export 'Home/export.dart';
 export 'Explore/export.dart';
 export 'Blog/export.dart';
-export 'Setting/setting_Screen.dart';
+export 'Setting/export.dart';

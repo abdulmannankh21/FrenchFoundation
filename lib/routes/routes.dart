@@ -53,6 +53,18 @@ class AppRoutes {
       page: () => BlogScreen(),
       binding: BlogBindings(),
     ),
+    GetPage(
+      name: RouteNames.setting,
+      page: () => SettingScreen(),
+    ),
+    GetPage(
+      name: RouteNames.aboutus,
+      page: () => AboutUs(),
+    ),
+    GetPage(
+      name: RouteNames.profile,
+      page: () => ProfileScreen(),
+    ),
   ];
 
   static Future<dynamic>? appRoutes(final String routeName) {
@@ -68,6 +80,8 @@ class AppRoutes {
       case RouteNames.explore:
       case RouteNames.blog:
       case RouteNames.setting:
+      case RouteNames.aboutus:
+      case RouteNames.profile:
         return Get.toNamed(routeName);
       default:
         return _errorRoute();

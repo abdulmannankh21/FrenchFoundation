@@ -9,5 +9,7 @@ class RouteNames{
   static const explore = '/explore';
   static const blog = '/blog';
   static const setting = '/setting';
+  static const aboutus = '/aboutus';
+  static const profile = '/profile';
   static const donation = '/donation';
 }

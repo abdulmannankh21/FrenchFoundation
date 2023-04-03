@@ -62,7 +62,7 @@ class SettingScreen extends StatelessWidget {
                       image: "assets/icons/Profileicon.svg",
                       title: 'Mon profil',
                       subtitle: 'Voir et modifier votre profil',
-                      onTap: () => Get.toNamed(RouteNames.home),
+                      onTap: () => Get.toNamed(RouteNames.profile),
                     ),
                     horizontalDividerGrey(),
                     verticalSpacer(20),
@@ -103,7 +103,7 @@ class SettingScreen extends StatelessWidget {
                       image: "assets/icons/Iconly-Bold-Info-Square.svg",
                       title: 'À propos de nous',
                       subtitle: 'voir qui nous sommes',
-                      onTap: () => Get.toNamed(RouteNames.home),
+                      onTap: () => Get.toNamed(RouteNames.aboutus),
                     ),
                     horizontalDividerGrey(),
 
